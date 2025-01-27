@@ -4,8 +4,8 @@
 ## Models and Results
 |Method|Backbone|Pretrain|$AP$|$AP_{50}$|$AP_{75}$|Model|
 |:-|:-|:-|:-|:-|:-|:-|
-|EnDiff-r50|ResNet50|[cascade_rcnn_r50_coco2017]()|49.9|82.8|52.6|[endiff_r50_urpc]()|
-|EnDiff-xt101|ResNetXT101|[cascade_rcnn_xt101_coco2017]()|50.5|84.1|54.4|[endiff_xt101_urpc]()|
+|EnDiff-r50|ResNet50|[cascade_rcnn_r50_coco2017](https://github.com/dingdongtu521/en-diff/releases/download/Models/cascade_rcnn_r50_coco2017.pth)|49.9|82.8|52.6|[endiff_r50_urpc](https://github.com/dingdongtu521/en-diff/releases/download/Models/endiff_r50_urpc.pth)|
+|EnDiff-xt101|ResNetXT101|[cascade_rcnn_xt101_coco2017](https://github.com/dingdongtu521/en-diff/releases/download/Models/cascade_rcnn_xt101_coco2017.pth)|50.5|84.1|54.4|[endiff_xt101_urpc](https://github.com/dingdongtu521/en-diff/releases/download/Models/endiff_xt101_urpc.pth)|
 
 
 ## Usage
@@ -50,7 +50,7 @@ Here we take testing `EnDiff-r50` as an example.
 First download our checkpoint file to `checkpoints/endiff_r50_urpc.pth`:
 ```shell
 mkdir checkpoints
-wget -P ./checkpoints/ https://github.com/
+wget -P ./checkpoints/ https://github.com/https://github.com/dingdongtu521/en-diff/releases/download/Models/endiff_r50_urpc.pth
 ```
 Then test our model (set '--cfg-options' to avoid loading pre-trained weights):
 ```shell
@@ -64,7 +64,7 @@ python tools/test.py \
 
 Fist download our pre-trained model:
 ```shell
-wget -P ./checkpoints/ https://github.com/
+wget -P ./checkpoints/ https://github.com/dingdongtu521/en-diff/releases/download/Models/cascade_rcnn_r50_coco2017.pth
 ```
 Then train a model:
 ```shell
